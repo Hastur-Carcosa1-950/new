@@ -1,0 +1,723 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #e8f5e9;
+
+    color: #1b4332;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #2d6a4f;
+
+    color: white;
+
+    padding: 20px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+header h1 {
+    margin: 0;
+
+    font-size: 28px;
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+nav a:hover {
+    color: #b7e4c7;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+main {
+    min-height: 80vh;
+}
+
+
+/* PRIMEIRA SEÇÃO */
+
+.hero {
+    text-align: center;
+
+    padding: 120px 20px;
+
+    background: linear-gradient(
+        #74c69d,
+        #d8f3dc
+    );
+}
+
+
+.hero h2 {
+    font-size: 45px;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+    font-size: 20px;
+
+    margin-bottom: 40px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    background-color: #1b4332;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px 35px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+}
+
+
+.botao:hover {
+    background-color: #40916c;
+
+    transform: scale(1.05);
+}
+
+
+/* INFORMAÇÃO */
+
+.informacao {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+
+.informacao h2 {
+    font-size: 32px;
+}
+
+
+.informacao p {
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #1b4332;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+/* =========================
+   SIMULADOR DE DESMATAMENTO
+   ========================= */
+
+
+.simulador {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+
+.simulador h2 {
+    font-size: 40px;
+}
+
+
+.simulador > p {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+
+/* FLORESTA */
+
+.floresta {
+    background-color: #95d5b2;
+
+    border-radius: 20px;
+
+    min-height: 300px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+.floresta span {
+    font-size: 30px;
+}
+
+
+/* INDICADORES */
+
+.indicadores {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+
+.indicador {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.barra {
+    width: 100%;
+
+    height: 20px;
+
+    background-color: #d8f3dc;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.progresso {
+    height: 100%;
+
+    background-color: #40916c;
+
+    transition: width 0.3s;
+}
+/* =========================
+   MENSAGEM DO SIMULADOR
+   ========================= */
+
+.mensagem {
+    background-color: white;
+
+    padding: 15px;
+
+    margin: 30px auto;
+
+    border-radius: 15px;
+
+    max-width: 700px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   BOTÕES
+   ========================= */
+
+.acoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 25px;
+}
+
+
+.botao-replantar {
+    background-color: #2d6a4f;
+}
+
+
+.botao-replantar:hover {
+    background-color: #40916c;
+}
+/* =========================
+   ANIMAIS
+   ========================= */
+
+.animais {
+    background-color: white;
+
+    padding: 30px;
+
+    margin: 40px auto;
+
+    border-radius: 20px;
+
+    max-width: 800px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.animais h2 {
+    margin-top: 0;
+
+    font-size: 30px;
+}
+
+
+.animais p {
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+
+.animais-lista {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.animal {
+    font-size: 55px;
+
+    background-color: #d8f3dc;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    transition: transform 0.2s;
+}
+
+
+.animal:hover {
+    transform: scale(1.15);
+}
+   /* =========================
+   CURIOSIDADES
+   ========================= */
+
+.pagina-curiosidades {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+
+.pagina-curiosidades h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.pagina-curiosidades > p {
+
+    font-size: 18px;
+
+    margin-bottom: 50px;
+}
+
+
+/* GRID */
+
+.curiosidades-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CAIXA */
+
+.curiosidade {
+
+    background-color: #40916c;
+
+    color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.curiosidade:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* TÍTULO DA CAIXA */
+
+.curiosidade summary {
+
+    padding: 30px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* REMOVE A SETINHA PADRÃO */
+
+.curiosidade summary::-webkit-details-marker {
+
+    display: none;
+}
+
+
+/* NOSSA SETINHA */
+
+.seta {
+
+    font-size: 16px;
+
+    transition: transform 0.3s;
+}
+
+
+/* QUANDO A CAIXA ESTÁ ABERTA */
+
+.curiosidade[open] .seta {
+
+    transform: rotate(180deg);
+}
+
+
+/* TEXTO */
+
+.texto-curiosidade {
+
+    background-color: #d8f3dc;
+
+    color: #1b4332;
+
+    padding: 0 30px;
+
+    animation: abrirCuriosidade 0.4s ease;
+}
+
+
+.texto-curiosidade p {
+
+    margin: 0;
+
+    padding: 25px 0;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes abrirCuriosidade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   ECOIA
+   ========================= */
+
+.ecoia {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+
+.ecoia h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+.ecoia > p {
+
+    font-size: 19px;
+
+    margin-bottom: 40px;
+}
+
+
+/* FORMULÁRIO */
+
+.ecoia form {
+
+    display: flex;
+
+    gap: 10px;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.ecoia input {
+
+    flex: 1;
+
+    padding: 18px;
+
+    border: 2px solid #95d5b2;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.ecoia input:focus {
+
+    border-color: #2d6a4f;
+}
+
+
+.ecoia button {
+
+    padding: 18px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #2d6a4f;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.ecoia button:hover {
+
+    background-color: #40916c;
+
+    transform: scale(1.03);
+}
+
+
+/* RESPOSTA */
+
+.resposta {
+
+    margin-top: 40px;
+
+    padding: 30px;
+
+    background-color: #d8f3dc;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    animation: aparecerResposta 0.4s ease;
+}
+
+
+.resposta h3 {
+
+    margin-top: 0;
+
+    color: #1b4332;
+}
+
+
+.resposta p {
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* EXEMPLOS */
+
+.perguntas-exemplo {
+
+    margin-top: 50px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: left;
+}
+
+
+.perguntas-exemplo h3 {
+
+    color: #2d6a4f;
+}
+
+
+.perguntas-exemplo p {
+
+    margin: 10px 0;
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes aparecerResposta {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
